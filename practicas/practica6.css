@@ -7,16 +7,19 @@
 
 }
 body{
-    background:#555;
+    background:rgba(85, 85, 85, 0.842);
     font-family: Arial, Helvetica, sans-serif;
     font-size:16px;
     
 }
 .contenedor{
-    width:1000px;
+    width:90%;
+    max-width: 90%;
     margin:20px auto;
+    overflow: hidden;
+    /*background: #FFF;*/
     }
-header{
+ header  {
     background: #FFF;
 }
 header nav{
@@ -44,7 +47,9 @@ header nav ul li a:hover{
 
 }
 .main{
-    width: 700px;
+    width: 70%;
+    background: #FFF;
+    float: left;
 }
 .main .imagen{
     width: 100%;
@@ -52,4 +57,76 @@ header nav ul li a:hover{
 .main .imagen img{
  width: 100%;
  vertical-align: top;
+}
+.main .post{
+    padding: 40px;
+    margin :10% auto;
+}
+.main .post article h2{
+    margin-bottom:20px;
+    color: #5e2e18; 
+}
+.main .post article p{
+    margin-bottom: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 30px;
+    }
+ aside{
+        width: 30%;
+        background: rgb(158, 45, 11);
+        padding: 20px;
+        color:#FFF;
+        float: left;
+}
+.widget{
+    margin-bottom: 20px;
+
+}
+aside .widget .Titulo{
+color:#FF8000;
+border-bottom: 1px solid #ff8000;
+margin: 10px;
+}
+aside .widget ul{
+    list-style:none;
+}
+aside .widet ul li{
+border-bottom: 1px solid #FFF;
+padding: 10px 0;
+}   
+aside .widget ul li a{
+    color:#FFF;
+    text-decoration: none;
+    
+}
+aside .widget ul li a:hover {
+    color: #555;
+    text-decoration:initial;
+    
+}
+aside .widget p{
+    line-height: 27px;
+}
+footer{
+    width: 70%;
+    background: #000;
+    color :#FFF;
+    padding: 15px 0;
+    text-align: center;
+    clear: both;
+
+}
+@media screen and (max-width: 800px){
+    body {
+        background:#000;
+    }
+    .main{
+        width: 100%;
+    }
+    aside{
+        width:100%;
+    }
+    footer{
+        width:100%;
+    }
 }
